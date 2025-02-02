@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import { Send, Lock, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Send, Lock, Phone, Mail, Clock } from "lucide-react";
 
 export default function VVIPContact() {
   const [formData, setFormData] = useState({
