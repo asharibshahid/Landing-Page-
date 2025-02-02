@@ -40,7 +40,9 @@ export default function Home() {
 
     return () => observer.disconnect();
   }, []);
-
+  if (isVisible) {
+    console.log("Component is visible");
+  }
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-600 to-purple-700 text-white">
       {/* Header Section */}
@@ -127,7 +129,7 @@ export default function Home() {
         viewport={{ once: true }}
         className="mt-24 text-center px-6 pb-12"
       >
-        <h2 className="text-3xl font-semibold mb-4">Let's Build Something Amazing!</h2>
+        <h2 className="text-3xl font-semibold mb-4">Lets Build Something Amazing!</h2>
         <p className="text-lg mb-8">
           Get in touch for a <strong>FREE UI/UX Website Audit</strong> or to discuss your project.
         </p>
